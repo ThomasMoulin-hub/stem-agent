@@ -2,6 +2,8 @@
 
 A self-specializing AI agent that starts as a neutral "Observer" and evolves into a domain-specific assistant by analyzing your project's signals (file structure, tech stack, and user intent).
 
+📄 **[Read the Full Project Report (PDF)](./stem_agent_writeup.pdf)**
+
 ## 🚀 Installation (BMad Standard)
 
 This agent is built using the **BMad Method**. It can be run by any BMad-compatible runner (Gemini CLI, Claude Code, etc.).
@@ -19,8 +21,6 @@ Start the agent using your preferred BMad runner:
 ```powershell
 /stem-agent
 ```
-
-
 
 ## 🧬 How it Works
 
