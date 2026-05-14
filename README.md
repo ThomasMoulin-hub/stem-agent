@@ -9,29 +9,29 @@ If you are starting from a completely empty project and don't have BMad installe
 ### 1. Install BMad & Configure your IDE
 Run the BMad installer. Follow the prompts to select your IDE (VS Code, JetBrains, etc.) and configure your environment.
 ```powershell
-npx bmad install
+npx bmad-method install
 ```
 
 ### 2. Add the Stem Agent
 Clone the Stem Agent repository directly into your project's `skills/` folder.
 ```powershell
 mkdir skills
-git clone https://github.com/Thomas-Moulin-hub/stem-agent.git skills/stem-agent
+git clone https://github.com/ThomasMoulin-hub/stem-agent.git skills/stem-agent
 ```
 
 ### 3. Register the Module
-Navigate into the agent's folder and run the self-installation command:
+Navigate into the agent's folder and run the self-installation command using the BMad package:
 ```powershell
 cd skills/stem-agent
-bmad . install
+npx -p @google/gemini-cli bmad . install
 ```
-*Note: Using `bmad . install` inside the folder tells BMad to install the current directory as a module.*
+*Note: This command uses `npx` to run the `bmad` tool from the `@google/gemini-cli` package, ensuring it works even if you haven't installed it globally.*
 
 ### 4. Return to Root & Awaken
-Return to your project root to launch your IDE or start your session. The agent will guide you through its first transformation:
+Return to your project root and start the agent:
 ```powershell
 cd ../..
-bmad stem-agent
+npx -p @google/gemini-cli bmad stem-agent
 ```
 
 ## 🧬 How it Works
