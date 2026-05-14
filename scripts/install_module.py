@@ -49,7 +49,7 @@ def update_config_toml(project_root):
     # to be as "Stem" (minimal dependency) as possible, or use the 'toml' lib if available.
     try:
         import toml
-        with open(config_path, 'r') as f:
+        with open(config_path, 'r', encoding='utf-8') as f:
             config = toml.load(f)
         
         # Ensure modules section exists
@@ -71,14 +71,14 @@ def update_config_toml(project_root):
             "description": AGENT_DESCRIPTION
         }
 
-        with open(config_path, 'w') as f:
+        with open(config_path, 'w', encoding='utf-8') as f:
             toml.dump(config, f)
         print(f"Updated {config_path}")
         return True
     except ImportError:
         print("Warning: 'toml' package not found. Manual registration needed or install with 'pip install toml'.")
         # Fallback to manual append for simple cases
-        with open(config_path, 'a') as f:
+        with open(config_path, 'a', encoding='utf-8') as f:
             f.write(f"\n[modules.{MODULE_CODE}]\n")
             f.write(f"\n[agents.{AGENT_CODE}]\n")
             f.write(f"module = \"{MODULE_CODE}\"\n")

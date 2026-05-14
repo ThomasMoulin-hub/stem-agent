@@ -1,0 +1,26 @@
+{
+  "name": "stem",
+  "owner": {
+    "name": ""
+  },
+  "license": "",
+  "homepage": "",
+  "repository": "",
+  "keywords": [
+    "bmad"
+  ],
+  "plugins": [
+    {
+      "name": "stem",
+      "source": "./",
+      "description": "A self-specializing agent that evolves based on project signals.",
+      "version": "1.0.0",
+      "author": {
+        "name": ""
+      },
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}
