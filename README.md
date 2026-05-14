@@ -16,7 +16,7 @@ npx bmad install
 Clone the Stem Agent repository directly into your project's `skills/` folder.
 ```powershell
 mkdir skills
-git clone https://github.com/your-username/stem-agent.git skills/stem-agent
+git clone https://github.com/Thomas-Moulin-hub/stem-agent.git skills/stem-agent
 ```
 
 ### 3. Register the Module
@@ -45,8 +45,6 @@ bmad stem-agent
 Once installed, the agent can run in the background. If you significantly change your project's tech stack, it will detect the "Genetic Drift" and suggest a new evolution at the start of your next session.
 
 ---
-*Created for the JetBrains Internship Task #1*
-
 ## ❓ What is BMad?
 
 **BMad** (Benchmark-Driven, Modular, Agentic Design) is an open-source framework and methodology for building specialized AI agents and automated workflows. Unlike generic chatbots, BMad agents are **outcome-driven**, meaning they focus on achieving specific goals through a structured "Sanctum" of memory, persona, and deterministic tools.
