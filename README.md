@@ -44,3 +44,13 @@ bmad stem-agent
 ## 🛠️ Autonomous Drift Detection
 Once installed, the agent can run in the background. If you significantly change your project's tech stack, it will detect the "Genetic Drift" and suggest a new evolution at the start of your next session.
 
+---
+*Created for the JetBrains Internship Task #1*
+
+## ❓ What is BMad?
+
+**BMad** (Benchmark-Driven, Modular, Agentic Design) is an open-source framework and methodology for building specialized AI agents and automated workflows. Unlike generic chatbots, BMad agents are **outcome-driven**, meaning they focus on achieving specific goals through a structured "Sanctum" of memory, persona, and deterministic tools.
+
+For more information, visit the official repository:
+👉 [BMad Method Repository](https://github.com/bmad-method/bmad)
+
