@@ -13,17 +13,19 @@ npx bmad install
 ```
 
 ### 2. Add the Stem Agent
-Create a `skills/` directory and place the `stem-agent` folder inside it.
+Clone the Stem Agent repository directly into your project's `skills/` folder.
 ```powershell
 mkdir skills
-# Then clone or copy the stem-agent folder into skills/stem-agent
+git clone https://github.com/your-username/stem-agent.git skills/stem-agent
 ```
 
 ### 3. Register the Module
-Run the self-installation command to register the agent and module with your local BMad environment:
+Navigate into the agent's folder and run the self-installation command to register the agent and module with your local BMad environment:
 ```powershell
-bmad stem-agent install
+cd skills/stem-agent
+bmad . install
 ```
+*Note: Using `bmad . install` inside the folder tells BMad to install the current directory as a module.*
 
 ### 4. Awaken & Evolve
 Start the agent. It will guide you through its first transformation:
@@ -41,5 +43,3 @@ bmad stem-agent
 ## 🛠️ Autonomous Drift Detection
 Once installed, the agent can run in the background. If you significantly change your project's tech stack, it will detect the "Genetic Drift" and suggest a new evolution at the start of your next session.
 
----
-*Created for the JetBrains Internship Task #1*
