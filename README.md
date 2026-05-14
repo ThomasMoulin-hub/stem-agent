@@ -2,36 +2,41 @@
 
 A self-specializing AI agent that starts as a neutral "Observer" and evolves into a domain-specific assistant by analyzing your project's signals (file structure, tech stack, and user intent).
 
-## 🚀 Zero-to-Specialist Installation
+## 🚀 Installation (BMad Standard)
 
-If you are starting from a completely empty project and don't have BMad installed, follow these steps:
+This agent is built using the **BMad Method**. It can be run by any BMad-compatible runner (Gemini CLI, Claude Code, etc.).
 
-### 1. Install BMad & Configure your IDE
-Run the BMad installer. Follow the prompts to select your IDE (VS Code, JetBrains, etc.) and configure your environment.
+### 1. Initialize your BMad Project
+If you haven't already, initialize BMad in your project root:
 ```powershell
 npx bmad-method install
 ```
 
 ### 2. Add the Stem Agent
-Clone the Stem Agent repository directly into your project's `skills/` folder.
+Clone the repository into your project's `skills/` folder:
 ```powershell
 mkdir skills
 git clone https://github.com/ThomasMoulin-hub/stem-agent.git skills/stem-agent
 ```
 
-### 3. Register the Module
-Navigate into the agent's folder and run the self-installation command using the BMad package:
+### 3. Register the Module (Tool-Agnostic)
+Run the universal installation script. This registers the agent without needing a specific CLI tool:
 ```powershell
-cd skills/stem-agent
-npx -p @google/gemini-cli bmad . install
+python skills/stem-agent/scripts/install_module.py
 ```
-*Note: This command uses `npx` to run the `bmad` tool from the `@google/gemini-cli` package, ensuring it works even if you haven't installed it globally.*
 
-### 4. Return to Root & Awaken
-Return to your project root and start the agent:
+### 4. Awaken & Evolve
+Start the agent using your preferred BMad runner:
+
+**Using Gemini CLI:**
 ```powershell
-cd ../..
-npx -p @google/gemini-cli bmad stem-agent
+bmad stem-agent
+```
+
+**Using Claude Code:**
+```powershell
+# Ensure you have the BMad plugin enabled, then:
+cliserv stem-agent
 ```
 
 ## 🧬 How it Works
