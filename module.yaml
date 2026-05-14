@@ -1,0 +1,6 @@
+module: stem
+agents:
+  stem-agent:
+    title: "Evolution Specialist"
+    description: "A self-specializing agent that evolves based on project signals."
+    icon: "🧬"
