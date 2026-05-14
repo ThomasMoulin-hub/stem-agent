@@ -1,0 +1,34 @@
+# Stem Agent Evolution Suite
+# Module manifest for the stem-agent standalone module.
+
+name: "Stem Agent Evolution Suite"
+code: "stem"
+description: "A self-specializing agent that evolves based on project signals."
+version: "1.0.0"
+author: "Thomas"
+
+# Capabilities provided by the agent(s) in this module
+capabilities:
+  - code: "AD"
+    name: "Analyze Domain"
+    description: "Scan the environment and identify the project domain."
+  - code: "SP"
+    name: "Specialize Persona"
+    description: "Mutate the agent's DNA to adopt a specialized persona."
+  - code: "VT"
+    name: "Validate Transformation"
+    description: "Run sanity checks on new persona."
+  - code: "ET"
+    name: "Execute Task"
+    description: "Perform domain-specific work."
+
+# Agents registered by this module
+agents:
+  - code: "stem-agent"
+    title: "Evolution Specialist"
+    icon: "🧬"
+    description: "A self-specializing agent that evolves based on project signals."
+    agent_type: "autonomous"
+
+# Configuration required by this module
+config: []

@@ -1,0 +1,19 @@
+# BMad Agent Memory should NOT be committed to git.
+# This preserves the "Stem Cell" nature for new users.
+
+# Local genetic snapshots and persona state
+genetic_snapshots/
+DNA.json
+sessions/
+
+# Shared project knowledge learned during sessions
+domain_knowledge.md
+MEMORY.md
+BOND.md
+INDEX.md
+PULSE.md
+
+# Persona and Creed should also be fresh for each installation
+PERSONA.md
+CREED.md
+CAPABILITIES.md
