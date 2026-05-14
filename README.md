@@ -20,16 +20,17 @@ git clone https://github.com/your-username/stem-agent.git skills/stem-agent
 ```
 
 ### 3. Register the Module
-Navigate into the agent's folder and run the self-installation command to register the agent and module with your local BMad environment:
+Navigate into the agent's folder and run the self-installation command:
 ```powershell
 cd skills/stem-agent
 bmad . install
 ```
 *Note: Using `bmad . install` inside the folder tells BMad to install the current directory as a module.*
 
-### 4. Awaken & Evolve
-Start the agent. It will guide you through its first transformation:
+### 4. Return to Root & Awaken
+Return to your project root to launch your IDE or start your session. The agent will guide you through its first transformation:
 ```powershell
+cd ../..
 bmad stem-agent
 ```
 
