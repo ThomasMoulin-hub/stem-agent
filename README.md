@@ -6,38 +6,21 @@ A self-specializing AI agent that starts as a neutral "Observer" and evolves int
 
 This agent is built using the **BMad Method**. It can be run by any BMad-compatible runner (Gemini CLI, Claude Code, etc.).
 
-### 1. Initialize your BMad Project
-If you haven't already, initialize BMad in your project root:
+### 1. Install the Stem Agent
+Run the following command in your project root to install the module via the BMad Method CLI:
 ```powershell
-npx bmad-method install
+npx bmad-method install --custom-source https://github.com/ThomasMoulin-hub/stem-agent.git
 ```
 
-### 2. Add the Stem Agent
-Clone the repository into your project's `skills/` folder:
-```powershell
-mkdir skills
-git clone https://github.com/ThomasMoulin-hub/stem-agent.git skills/stem-agent
-```
-
-### 3. Register the Module (Tool-Agnostic)
-Run the universal installation script. This registers the agent without needing a specific CLI tool:
-```powershell
-python skills/stem-agent/scripts/install_module.py
-```
-
-### 4. Awaken & Evolve
+### 2. Awaken & Evolve
 Start the agent using your preferred BMad runner:
 
 **Using Gemini CLI:**
 ```powershell
-bmad stem-agent
+/stem-agent
 ```
 
-**Using Claude Code:**
-```powershell
-# Ensure you have the BMad plugin enabled, then:
-cliserv stem-agent
-```
+
 
 ## 🧬 How it Works
 
