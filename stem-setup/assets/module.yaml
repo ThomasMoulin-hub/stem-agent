@@ -1,4 +1,6 @@
-module: stem
+code: stem
+name: "Stem Agent"
+description: "A self-specializing agent module that evolves based on project signals."
 agents:
   stem-agent:
     title: "Evolution Specialist"
